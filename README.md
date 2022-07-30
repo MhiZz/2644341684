@@ -1,1 +1,1 @@
-(https://github-readme-stats.vercel.app/api?username=MhiZz)](https://github.com/anuraghazra/github-readme-stats)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=MhiZz)](https://github.com/anuraghazra/github-readme-stats)
