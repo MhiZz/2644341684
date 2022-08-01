@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      width: 100px;
+      height: 100px;
+      background-color: yellow;
+    }
+    .one {
+      margin-bottom: 10px;
+    }
+    .two {
+      margin-top: 10px;
+      /* 本来间距应该是10+10px现在是10px 说明会合并 */
+      /* 如果上下margin 不相同的情况下 按大的算 */
+      /* 解决方法 只给一个标签加 */
+    }
+  </style>
+</head>
+<body>
+  <div class="one">11111</div>
+  <div class="two">22222</div>
+</body>
+</html>

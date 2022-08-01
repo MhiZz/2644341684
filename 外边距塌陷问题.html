@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .father { 
+      width: 300px;
+      height: 300px;
+      background-color: yellow;
+      
+      
+    }
+    .son {
+      width: 100px;
+      height: 100px;
+      background-color: skyblue;
+      margin-top:100px;
+      /* 这里整个都下去了 外边距塌陷问题 */
+      /* 解决方法1 用padding-top border-top如果设计稿没有边线就不能用*/
+      /* 解决方法2 用 overflow: hidden; 给父元素*/
+      /* 解决方法3 转换成行内块元素  display: inline-block;*/
+      /* 解决方法4 设置浮动 */
+      
+    }
+  </style>
+</head>
+<body>
+  <div class="father"> 
+    <div class="son"> son </div>
+  </div>
+</body>
+</html>
