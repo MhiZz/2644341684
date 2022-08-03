@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- 伪元素是利用css创建标签 装饰性的 不重要的小图 -->
+<style>
+  /*  用法      ::after  ::before  
+      注意点: 必须设置content属性才能生效
+              伪元素默认是行内元素 */
+  .father {
+    width: 300px;
+    height: 300px;
+    background-color: pink;
+  }
+  .father::after{
+    content:'c';
+    color: green;
+  }
+  .father::before{
+    content:'a';
+  }
+
+
+</style>
+</head>
+<body>
+  <div class="father">克勤</div>
+</body>
+</html>
