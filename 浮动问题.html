@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+    div {
+      width: 100px;
+      height: 100px;
+      display: inline-block;
+    }
+    .one {
+      background-color: yellow;
+    }
+    .two {
+      background-color: skyblue;
+    }
+    .three {
+      background-color: pink;
+    }
+    .four {
+      background-color: purple;
+    }
+    .five {
+      background-color: green;
+      float: left;
+    }
+    .six {
+      background-color: red;
+    }
+</style>
+</head>
+<body>
+  <!-- 浮动的作用 : 让块级标签完美的再一行排
+         早期作用 : 图文环绕 -->
+  <!-- 这里中两个div块有间隔 -->
+  <!-- 原因 如果代码换行 产生一个空格间距 -->
+  <div class="one"></div>
+  <div class="two"></div>
+  <br>
+  <!-- 解决方法一  不换行 -->
+  <div class="three"></div><div class="four"></div>
+  <br>
+  <!-- 解决方法二  浮动 -->
+  <div class="five"></div>
+  <div class="six"></div>
+</body>
+</html>
